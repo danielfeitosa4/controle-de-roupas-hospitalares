@@ -1,0 +1,16 @@
+<div class="container">
+  <h3>Login:</h3>
+  <div class="card">
+    <div class="card-body">
+      <form action="/usuarios/add" method="post">
+        <label for="email">Email: </label>
+          <input type="email" name="email" class="form-control" required>
+        <label for="senha">Senha: </label>
+          <input type="password" name="senha" class="form-control" required>
+        <button type="submit" class="btn btn-success mt-4">Entrar</button>
+      </form>
+      <br>
+      <span>Não possui conta? <a href="/usuarios/registro">Cadastre-se</a></span>
+    </div>
+  </div>
+</div>
