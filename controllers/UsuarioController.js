@@ -4,7 +4,7 @@ const Usuario = require('../models/Usuario')
 // Hash
 const bcrypt = require('bcryptjs')
 
-module.exports = class LoginController {
+module.exports = class UsuarioController {
 
   static registro(req, res) {
     res.render('usuarios/registro')
