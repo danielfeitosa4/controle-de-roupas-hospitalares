@@ -2,25 +2,23 @@ const { DataTypes } = require('sequelize')
 
 const db = require('../db/conn')
 
-const Usuario = db.define('Usuario', {
+const Profissional = db.define('Profissional', {
   nome: {
     type: DataTypes.STRING,
     required: true
   },
-  email: {
+  sobrenome: {
+    type: DataTypes.STRING,
+    required: true,
+  },
+  setor: {
     type: DataTypes.STRING,
     required: true
   },
-  eAdmin: {
-    type: DataTypes.STRING,
-    defaultValue: '0'
-  },
-  senha: {
+  vinculo: {
     type: DataTypes.STRING,
     required: true
   }
 })
 
-//hasmany
-
-module.exports = Usuario
+module.exports = Profissional
